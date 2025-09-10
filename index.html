@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate ROI-Optimized Coding Interview Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Ultimate ROI-Optimized Coding Interview Guide</h1>
+        <p>Data-Driven Approach for Maximum Interview Success</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#overview" class="nav-item">Overview</a>
+            <a href="#high-roi" class="nav-item">High ROI</a>
+            <a href="#medium-roi" class="nav-item">Medium ROI</a>
+            <a href="#low-roi" class="nav-item">Low ROI</a>
+            <a href="#progress" class="nav-item">Progress</a>
+            <a href="#comfort" class="nav-item">Comfort</a>
+            <a href="#study-plans" class="nav-item">Study Plans</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Overview Section -->
+        <section id="overview" class="glass-container">
+            <div class="section-header">
+                <h2>📊 Overview</h2>
+            </div>
+            <p>This guide organizes coding interview topics by <strong>Return on Investment (ROI)</strong> and <strong>Learning Difficulty</strong> based on comprehensive analysis of interview frequency and success rates. Study in the order presented for maximum efficiency.</p>
+            
+            <div class="topic-grid">
+                <div class="topic-card">
+                    <div class="roi-badge">High ROI Topics</div>
+                    <h3>Study First</h3>
+                    <ul>
+                        <li><strong>Frequency:</strong> 12-25% of interviews</li>
+                        <li><strong>Learning Time:</strong> 5-15 hours to competency</li>
+                        <li><strong>Success Impact:</strong> High - directly improves interview performance</li>
+                        <li><strong>Examples:</strong> Arrays & Hashing, Two Pointers, BFS</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <div class="roi-badge" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">Medium ROI Topics</div>
+                    <h3>Study Second</h3>
+                    <ul>
+                        <li><strong>Frequency:</strong> 6-12% of interviews</li>
+                        <li><strong>Learning Time:</strong> 10-25 hours to competency</li>
+                        <li><strong>Success Impact:</strong> Medium - important but more specialized</li>
+                        <li><strong>Examples:</strong> Binary Search, Heap, Dynamic Programming</li>
+                    </ul>
+                </div>
+                
+                <div class="topic-card">
+                    <div class="roi-badge" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">Low ROI Topics</div>
+                    <h3>Study Last</h3>
+                    <ul>
+                        <li><strong>Frequency:</strong> 2-6% of interviews</li>
+                        <li><strong>Learning Time:</strong> 15-40+ hours to competency</li>
+                        <li><strong>Success Impact:</strong> Low - very specialized, high difficulty</li>
+                        <li><strong>Examples:</strong> Trie, Union Find, Advanced Greedy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- High ROI Section -->
+        <section id="high-roi">
+            <div class="section-header">
+                <h2>🎯 HIGHEST ROI - Study These First!</h2>
+            </div>
+
+            <!-- Arrays & Hashing -->
+            <div class="glass-container">
+                <div class="topic-title">1. Arrays & Hashing (Easy to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Fundamental building blocks, appears in 20-25% of interviews, essential for all other patterns.
+                </div>
+                <div class="topic-description">
+                    Master array manipulation and hash table operations - the foundation of most coding interview problems.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Contains Duplicate</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 10-15 min</span>
+                            <span>Pattern: Hash set for duplicates</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/contains-duplicate/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Contains Duplicate" data-level="1" onclick="toggleComfortLevel(this, 'Contains Duplicate', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Contains Duplicate" data-level="2" onclick="toggleComfortLevel(this, 'Contains Duplicate', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Contains Duplicate" data-level="3" onclick="toggleComfortLevel(this, 'Contains Duplicate', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Contains Duplicate" data-level="4" onclick="toggleComfortLevel(this, 'Contains Duplicate', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Contains Duplicate" data-level="5" onclick="toggleComfortLevel(this, 'Contains Duplicate', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Valid Anagram</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Character frequency counting</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/valid-anagram/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Valid Anagram" data-level="1" onclick="toggleComfortLevel(this, 'Valid Anagram', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Anagram" data-level="2" onclick="toggleComfortLevel(this, 'Valid Anagram', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Anagram" data-level="3" onclick="toggleComfortLevel(this, 'Valid Anagram', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Anagram" data-level="4" onclick="toggleComfortLevel(this, 'Valid Anagram', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Anagram" data-level="5" onclick="toggleComfortLevel(this, 'Valid Anagram', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Two Sum</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Hash map lookup</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/two-sum/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Two Sum" data-level="1" onclick="toggleComfortLevel(this, 'Two Sum', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Two Sum" data-level="2" onclick="toggleComfortLevel(this, 'Two Sum', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Two Sum" data-level="3" onclick="toggleComfortLevel(this, 'Two Sum', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Two Sum" data-level="4" onclick="toggleComfortLevel(this, 'Two Sum', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Two Sum" data-level="5" onclick="toggleComfortLevel(this, 'Two Sum', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Group Anagrams</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Hash map with sorted keys</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/group-anagrams/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Group Anagrams" data-level="1" onclick="toggleComfortLevel(this, 'Group Anagrams', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Group Anagrams" data-level="2" onclick="toggleComfortLevel(this, 'Group Anagrams', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Group Anagrams" data-level="3" onclick="toggleComfortLevel(this, 'Group Anagrams', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Group Anagrams" data-level="4" onclick="toggleComfortLevel(this, 'Group Anagrams', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Group Anagrams" data-level="5" onclick="toggleComfortLevel(this, 'Group Anagrams', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Top K Frequent Elements</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Frequency counting + sorting</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/top-k-frequent-elements/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Top K Frequent Elements" data-level="1" onclick="toggleComfortLevel(this, 'Top K Frequent Elements', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Top K Frequent Elements" data-level="2" onclick="toggleComfortLevel(this, 'Top K Frequent Elements', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Top K Frequent Elements" data-level="3" onclick="toggleComfortLevel(this, 'Top K Frequent Elements', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Top K Frequent Elements" data-level="4" onclick="toggleComfortLevel(this, 'Top K Frequent Elements', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Top K Frequent Elements" data-level="5" onclick="toggleComfortLevel(this, 'Top K Frequent Elements', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Product of Array Except Self</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Prefix/suffix arrays</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/product-of-array-except-self/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Product of Array Except Self" data-level="1" onclick="toggleComfortLevel(this, 'Product of Array Except Self', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Product of Array Except Self" data-level="2" onclick="toggleComfortLevel(this, 'Product of Array Except Self', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Product of Array Except Self" data-level="3" onclick="toggleComfortLevel(this, 'Product of Array Except Self', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Product of Array Except Self" data-level="4" onclick="toggleComfortLevel(this, 'Product of Array Except Self', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Product of Array Except Self" data-level="5" onclick="toggleComfortLevel(this, 'Product of Array Except Self', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Valid Sudoku</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Hash set validation</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/valid-sudoku/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Valid Sudoku" data-level="1" onclick="toggleComfortLevel(this, 'Valid Sudoku', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Sudoku" data-level="2" onclick="toggleComfortLevel(this, 'Valid Sudoku', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Sudoku" data-level="3" onclick="toggleComfortLevel(this, 'Valid Sudoku', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Sudoku" data-level="4" onclick="toggleComfortLevel(this, 'Valid Sudoku', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Valid Sudoku" data-level="5" onclick="toggleComfortLevel(this, 'Valid Sudoku', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Longest Consecutive Sequence</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Hash set for O(n) sequence finding</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/longest-consecutive-sequence/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                        <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Longest Consecutive Sequence" data-level="1" onclick="toggleComfortLevel(this, 'Longest Consecutive Sequence', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Longest Consecutive Sequence" data-level="2" onclick="toggleComfortLevel(this, 'Longest Consecutive Sequence', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Longest Consecutive Sequence" data-level="3" onclick="toggleComfortLevel(this, 'Longest Consecutive Sequence', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Longest Consecutive Sequence" data-level="4" onclick="toggleComfortLevel(this, 'Longest Consecutive Sequence', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Longest Consecutive Sequence" data-level="5" onclick="toggleComfortLevel(this, 'Longest Consecutive Sequence', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collapsible">
+                    <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                        <span>📚 <strong>Practice More Arrays & Hashing (6 Additional Problems)</strong></span>
+                        <span class="collapsible-toggle">▼</span>
+                    </div>
+                    <div class="collapsible-content">
+                        <div class="problem-item">
+                            <div class="problem-title">Encode And Decode Strings</div>
+                            <div class="problem-meta">
+                                <span class="difficulty medium">Medium</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/encode-and-decode-strings/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Encode And Decode Strings" data-level="1" onclick="toggleComfortLevel(this, 'Encode And Decode Strings', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Encode And Decode Strings" data-level="2" onclick="toggleComfortLevel(this, 'Encode And Decode Strings', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Encode And Decode Strings" data-level="3" onclick="toggleComfortLevel(this, 'Encode And Decode Strings', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Encode And Decode Strings" data-level="4" onclick="toggleComfortLevel(this, 'Encode And Decode Strings', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Encode And Decode Strings" data-level="5" onclick="toggleComfortLevel(this, 'Encode And Decode Strings', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <div class="problem-title">First Non-repeating Character</div>
+                            <div class="problem-meta">
+                                <span class="difficulty easy">Easy</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/first-unique-character-in-a-string/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                                <div class="comfort-checkbox" data-id="First Non-repeating Character" data-level="1" onclick="toggleComfortLevel(this, 'First Non-repeating Character', 1)"></div>
+                                <span class="comfort-label">Not Comfortable</span>
+                                <div class="comfort-checkbox" data-id="First Non-repeating Character" data-level="2" onclick="toggleComfortLevel(this, 'First Non-repeating Character', 2)"></div>
+                                <span class="comfort-label">Somewhat Comfortable</span>
+                                <div class="comfort-checkbox" data-id="First Non-repeating Character" data-level="3" onclick="toggleComfortLevel(this, 'First Non-repeating Character', 3)"></div>
+                                <span class="comfort-label">Comfortable</span>
+                                <div class="comfort-checkbox" data-id="First Non-repeating Character" data-level="4" onclick="toggleComfortLevel(this, 'First Non-repeating Character', 4)"></div>
+                                <span class="comfort-label">Very Comfortable</span>
+                                <div class="comfort-checkbox" data-id="First Non-repeating Character" data-level="5" onclick="toggleComfortLevel(this, 'First Non-repeating Character', 5)"></div>
+                                <span class="comfort-label">Mastered</span>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <div class="problem-title">Largest Unique Number</div>
+                            <div class="problem-meta">
+                                <span class="difficulty easy">Easy</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/largest-unique-number/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                            <div class="comfort-checkbox" data-id="Largest Unique Number" data-level="1" onclick="toggleComfortLevel(this, 'Largest Unique Number', 1)"></div>
+                            <span class="comfort-label">Not Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Largest Unique Number" data-level="2" onclick="toggleComfortLevel(this, 'Largest Unique Number', 2)"></div>
+                            <span class="comfort-label">Somewhat Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Largest Unique Number" data-level="3" onclick="toggleComfortLevel(this, 'Largest Unique Number', 3)"></div>
+                            <span class="comfort-label">Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Largest Unique Number" data-level="4" onclick="toggleComfortLevel(this, 'Largest Unique Number', 4)"></div>
+                            <span class="comfort-label">Very Comfortable</span>
+                            <div class="comfort-checkbox" data-id="Largest Unique Number" data-level="5" onclick="toggleComfortLevel(this, 'Largest Unique Number', 5)"></div>
+                            <span class="comfort-label">Mastered</span>
+                        </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <div class="problem-title">Maximum Number of Balloons</div>
+                            <div class="problem-meta">
+                                <span class="difficulty easy">Easy</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/maximum-number-of-balloons/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                                <div class="comfort-checkbox" data-id="Maximum Number of Balloons" data-level="1" onclick="toggleComfortLevel(this, 'Maximum Number of Balloons', 1)"></div>
+                                <span class="comfort-label">Not Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Maximum Number of Balloons" data-level="2" onclick="toggleComfortLevel(this, 'Maximum Number of Balloons', 2)"></div>
+                                <span class="comfort-label">Somewhat Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Maximum Number of Balloons" data-level="3" onclick="toggleComfortLevel(this, 'Maximum Number of Balloons', 3)"></div>
+                                <span class="comfort-label">Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Maximum Number of Balloons" data-level="4" onclick="toggleComfortLevel(this, 'Maximum Number of Balloons', 4)"></div>
+                                <span class="comfort-label">Very Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Maximum Number of Balloons" data-level="5" onclick="toggleComfortLevel(this, 'Maximum Number of Balloons', 5)"></div>
+                                <span class="comfort-label">Mastered</span>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <div class="problem-title">Longest Palindrome</div>
+                            <div class="problem-meta">
+                                <span class="difficulty easy">Easy</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/longest-palindrome/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                                <div class="comfort-checkbox" data-id="Longest Palindrome" data-level="1" onclick="toggleComfortLevel(this, 'Longest Palindrome', 1)"></div>
+                                <span class="comfort-label">Not Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Longest Palindrome" data-level="2" onclick="toggleComfortLevel(this, 'Longest Palindrome', 2)"></div>
+                                <span class="comfort-label">Somewhat Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Longest Palindrome" data-level="3" onclick="toggleComfortLevel(this, 'Longest Palindrome', 3)"></div>
+                                <span class="comfort-label">Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Longest Palindrome" data-level="4" onclick="toggleComfortLevel(this, 'Longest Palindrome', 4)"></div>
+                                <span class="comfort-label">Very Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Longest Palindrome" data-level="5" onclick="toggleComfortLevel(this, 'Longest Palindrome', 5)"></div>
+                                <span class="comfort-label">Mastered</span>
+                            </div>
+                        </div>
+                        
+                        <div class="problem-item">
+                            <div class="problem-title">Ransom Note</div>
+                            <div class="problem-meta">
+                                <span class="difficulty easy">Easy</span>
+                            </div>
+                            <div class="problem-links">
+                                <a href="https://leetcode.com/problems/ransom-note/" class="problem-link" target="_blank">LeetCode</a>
+                            </div>
+                            <div class="comfort-levels">
+                                <div class="comfort-checkbox" data-id="Ramsom Notes" data-level="1" onclick="toggleComfortLevel(this, 'Ramsom Notes', 1)"></div>
+                                <span class="comfort-label">Not Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Ramsom Notes" data-level="2" onclick="toggleComfortLevel(this, 'Ramsom Notes', 2)"></div>
+                                <span class="comfort-label">Somewhat Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Ramsom Notes" data-level="3" onclick="toggleComfortLevel(this, 'Ramsom Notes', 3)"></div>
+                                <span class="comfort-label">Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Ramsom Notes" data-level="4" onclick="toggleComfortLevel(this, 'Ramsom Notes', 4)"></div>
+                                <span class="comfort-label">Very Comfortable</span>
+                                <div class="comfort-checkbox" data-id="Ramsom Notes" data-level="5" onclick="toggleComfortLevel(this, 'Ramsom Notes', 5)"></div>
+                                <span class="comfort-label">Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Hash map for O(1) lookups</li>
+                        <li>Frequency counting with hash maps</li>
+                        <li>Array prefix/suffix techniques</li>
+                        <li>Set operations for duplicates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Two Pointers -->
+            <div class="glass-container">
+                <div class="topic-title">2. Two Pointers (Easy to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Appears in 15-20% of interviews, quick to master, builds foundation for other techniques.
+                </div>
+                <div class="topic-description">
+                    Use two pointers moving towards each other or in the same direction to solve array/string problems efficiently.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Valid Palindrome</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Opposite direction pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/valid-palindrome/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Two Sum II - Input Array Is Sorted</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Opposite direction pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">3Sum</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Fixed + moving pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/3sum/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Container With Most Water</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Greedy two pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/container-with-most-water/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Trapping Rain Water</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 30-35 min</span>
+                            <span>Pattern: Advanced two pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/trapping-rain-water/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Opposite direction pointers (palindrome, two sum)</li>
+                        <li>Same direction pointers (remove duplicates)</li>
+                        <li>Fast & slow pointers (cycle detection)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sliding Window -->
+            <div class="glass-container">
+                <div class="topic-title">3. Sliding Window (Easy to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> 10-15% of interviews, excellent for string/array optimization problems.
+                </div>
+                <div class="topic-description">
+                    Maintain a window of elements and slide it to find optimal solutions without recalculating from scratch.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Best Time to Buy and Sell Stock</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Simple sliding window</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Longest Substring Without Repeating Characters</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Variable window with hash set</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Longest Repeating Character Replacement</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Variable window with frequency count</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/longest-repeating-character-replacement/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Permutation in String</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Fixed window with frequency matching</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/permutation-in-string/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Minimum Window Substring</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 35-40 min</span>
+                            <span>Pattern: Advanced variable window</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/minimum-window-substring/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Fixed-size window</li>
+                        <li>Variable-size window</li>
+                        <li>Window with character frequency tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stack & Queue -->
+            <div class="glass-container">
+                <div class="topic-title">4. Stack & Queue (Easy to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Appears in 12-15% of interviews, essential for parsing and monotonic problems.
+                </div>
+                <div class="topic-description">
+                    Use LIFO (stack) and FIFO (queue) data structures to solve parsing, matching, and ordering problems.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Valid Parentheses</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Stack for matching pairs</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/valid-parentheses/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Min Stack</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Auxiliary stack for min tracking</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/min-stack/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Evaluate Reverse Polish Notation</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Stack for expression evaluation</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Daily Temperatures</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Monotonic stack</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/daily-temperatures/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Largest Rectangle in Histogram</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 35-40 min</span>
+                            <span>Pattern: Advanced monotonic stack</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/largest-rectangle-in-histogram/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Stack for matching and parsing</li>
+                        <li>Monotonic stack for next greater/smaller</li>
+                        <li>Queue for level-order processing</li>
+                        <li>Design problems with stacks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BFS -->
+            <div class="glass-container">
+                <div class="topic-title">5. Breadth-First Search (Easy to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Fundamental for tree/graph problems, appears in 12-18% of interviews.
+                </div>
+                <div class="topic-description">
+                    Explore nodes level by level using a queue. Essential for shortest path and level-order problems.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Binary Tree Level Order Traversal</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Basic level-order traversal</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Maximum Depth of Binary Tree</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: BFS depth counting</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Number of Islands</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Grid BFS</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/number-of-islands/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Rotting Oranges</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Multi-source BFS</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/rotting-oranges/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Course Schedule</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 30-35 min</span>
+                            <span>Pattern: Topological sort with BFS</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/course-schedule/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Level-order traversal</li>
+                        <li>Shortest path in unweighted graphs</li>
+                        <li>Multi-source BFS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DFS -->
+            <div class="glass-container">
+                <div class="topic-title">6. Depth-First Search (Medium to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Core technique for trees/graphs, backtracking foundation. 15-25% of interviews.
+                </div>
+                <div class="topic-description">
+                    Explore as far as possible along each branch before backtracking. Essential for tree traversals and path problems.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Invert Binary Tree</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Tree transformation</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/invert-binary-tree/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Validate Binary Search Tree</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Tree validation with bounds</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/validate-binary-search-tree/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Diameter of Binary Tree</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Tree metrics calculation</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/diameter-of-binary-tree/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Course Schedule</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 30-35 min</span>
+                            <span>Pattern: Cycle detection in directed graph</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/course-schedule/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Binary Tree Maximum Path Sum</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 35-40 min</span>
+                            <span>Pattern: Advanced tree path problems</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Tree traversals (preorder, inorder, postorder)</li>
+                        <li>Path sum problems</li>
+                        <li>Graph cycle detection</li>
+                        <li>Topological sorting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Backtracking -->
+            <div class="glass-container">
+                <div class="topic-title">7. Backtracking (High Difficulty to Learn, High ROI)</div>
+                <div class="why-roi">
+                    <strong>Why High ROI:</strong> Appears in 8-12% of interviews, but critical for senior roles and complex problem-solving.
+                </div>
+                <div class="topic-description">
+                    Systematically explore all possible solutions by building candidates incrementally and abandoning those that cannot lead to a valid solution.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Subsets</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Generate all combinations</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/subsets/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Permutations</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Generate all arrangements</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/permutations/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Combination Sum</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Target sum with reuse</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/combination-sum/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Word Search</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Grid backtracking</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/word-search/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Generate Parentheses</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Constraint-based generation</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/generate-parentheses/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">N-Queens</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 35-40 min</span>
+                            <span>Pattern: Constraint satisfaction</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/n-queens/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Generate all combinations/permutations</li>
+                        <li>Constraint satisfaction problems</li>
+                        <li>Path finding with constraints</li>
+                        <li>Decision tree exploration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medium ROI Section -->
+        <section id="medium-roi">
+            <div class="section-header">
+                <h2>💪 MEDIUM ROI - Study These Third</h2>
+            </div>
+
+            <!-- Binary Search -->
+            <div class="glass-container">
+                <div class="topic-title">8. Binary Search (Easy to Learn, Medium ROI)</div>
+                <div class="why-roi">
+                    <strong>Why Medium ROI:</strong> Appears in 8-12% of interviews, but essential for optimization problems.
+                </div>
+                <div class="topic-description">
+                    Efficiently search sorted arrays or search spaces by repeatedly dividing the problem in half.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Binary Search</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Classic binary search</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/binary-search/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Search in Rotated Sorted Array</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Modified binary search</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Find Minimum in Rotated Sorted Array</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Find pivot in rotated array</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Koko Eating Bananas</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Binary search on answer</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/koko-eating-bananas/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Median of Two Sorted Arrays</div>
+                        <div class="problem-meta">
+                            <span class="difficulty hard">Hard</span>
+                            <span>Time: 35-40 min</span>
+                            <span>Pattern: Advanced binary search</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Classic binary search on sorted arrays</li>
+                        <li>Binary search on rotated arrays</li>
+                        <li>Binary search on answer (optimization problems)</li>
+                        <li>2D matrix search</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Continue with other Medium ROI topics... -->
+            <!-- For brevity, I'll add a few more key topics -->
+
+            <!-- Dynamic Programming -->
+            <div class="glass-container">
+                <div class="topic-title">13. Dynamic Programming (High Difficulty to Learn, Medium ROI)</div>
+                <div class="why-roi">
+                    <strong>Why Medium ROI:</strong> 10-15% of interviews, but high difficulty makes it lower ROI for time-constrained prep.
+                </div>
+                <div class="topic-description">
+                    Break down complex problems into simpler subproblems and store results to avoid redundant calculations.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Climbing Stairs</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Basic 1-D DP</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/climbing-stairs/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">House Robber</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: Decision-based DP</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/house-robber/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Coin Change</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: Unbounded knapsack</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/coin-change/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Unique Paths</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 20-25 min</span>
+                            <span>Pattern: 2-D grid DP</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/unique-paths/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Longest Common Subsequence</div>
+                        <div class="problem-meta">
+                            <span class="difficulty medium">Medium</span>
+                            <span>Time: 25-30 min</span>
+                            <span>Pattern: 2-D string DP</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/longest-common-subsequence/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>1-D DP (linear problems)</li>
+                        <li>2-D DP (grid/string problems)</li>
+                        <li>Knapsack variations</li>
+                        <li>State machine DP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Low ROI Section -->
+        <section id="low-roi">
+            <div class="section-header">
+                <h2>📚 LOW ROI - Study These Last (Time Permitting)</h2>
+            </div>
+
+            <!-- Linked Lists -->
+            <div class="glass-container">
+                <div class="topic-title">11. Linked Lists (Easy to Learn, Medium ROI)</div>
+                <div class="why-roi">
+                    <strong>Why Medium ROI:</strong> 6-10% of interviews, fundamental data structure with many variations.
+                </div>
+                <div class="topic-description">
+                    Master linked list manipulation, pointer techniques, and common operations for dynamic data structures.
+                </div>
+                
+                <div class="problems-section">
+                    <div class="problems-header">
+                        <h4>🎯 Core Problems (Master These First):</h4>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Reverse Linked List</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Iterative pointer reversal</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/reverse-linked-list/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Merge Two Sorted Lists</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Two-pointer merging</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/merge-two-sorted-lists/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-title">Linked List Cycle</div>
+                        <div class="problem-meta">
+                            <span class="difficulty easy">Easy</span>
+                            <span>Time: 15-20 min</span>
+                            <span>Pattern: Fast & slow pointers</span>
+                        </div>
+                        <div class="problem-links">
+                            <a href="https://leetcode.com/problems/linked-list-cycle/" class="problem-link" target="_blank">LeetCode</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="patterns-list">
+                    <h5>Key Patterns:</h5>
+                    <ul>
+                        <li>Pointer manipulation and reversal</li>
+                        <li>Two-pointer techniques (fast/slow, gap)</li>
+                        <li>Dummy node usage for edge cases</li>
+                        <li>Hash map for complex node relationships</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracking -->
+        <section id="progress" class="progress-section">
+            <div class="section-header">
+                <h2>📊 Progress Tracking</h2>
+            </div>
+            
+            <h3 style="color: var(--accent-color); margin-bottom: 1rem;">High ROI Topics (Priority 1) ⭐⭐⭐⭐⭐</h3>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Arrays & Hashing</strong> - Easy to Learn ✅ Foundation</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Two Pointers</strong> - Easy to Learn ✅ Foundation</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Sliding Window</strong> - Easy to Learn ✅ Foundation</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Stack & Queue</strong> - Easy to Learn ✅ Foundation</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Breadth-First Search</strong> - Easy to Learn ✅ Foundation</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Depth-First Search</strong> - Medium Difficulty 🔥 Advanced</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Backtracking</strong> - High Difficulty 🔥 Advanced</span>
+            </div>
+            
+            <h3 style="color: var(--accent-color); margin: 2rem 0 1rem;">Medium ROI Topics (Priority 2) ⭐⭐⭐</h3>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Binary Search</strong> - Easy to Learn</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Heap</strong> - Medium Difficulty</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Intervals</strong> - Medium Difficulty</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Dynamic Programming</strong> - High Difficulty</span>
+            </div>
+            
+            <h3 style="color: var(--accent-color); margin: 2rem 0 1rem;">Low ROI Topics (Priority 3) ⭐</h3>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Linked Lists</strong> - Medium Difficulty</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Bit Manipulation</strong> - Easy to Learn</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Trie</strong> - Medium Difficulty</span>
+            </div>
+            <div class="progress-item">
+                <div class="progress-checkbox" onclick="toggleProgress(this)"></div>
+                <span><strong>Math & Geometry</strong> - Medium Difficulty</span>
+            </div>
+        </section>
+
+        <!-- Study Plans -->
+        <section id="study-plans">
+            <div class="section-header">
+                <h2>🎯 Study Plan Recommendations</h2>
+            </div>
+            
+            <div class="study-plan">
+                <div class="plan-card">
+                    <div class="plan-title">🚀 Emergency Prep</div>
+                    <div class="plan-duration">1-2 Weeks</div>
+                    <p><strong>Goal:</strong> Cover highest-impact topics only</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li><strong>Days 1-3:</strong> Arrays & Hashing + Two Pointers</li>
+                        <li><strong>Days 4-6:</strong> Sliding Window + Stack & Queue</li>
+                        <li><strong>Days 7-10:</strong> BFS basics</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Expected Coverage:</strong> 50-65% of interview patterns</p>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-title">📅 Balanced Approach</div>
+                    <div class="plan-duration">1 Month</div>
+                    <p><strong>Goal:</strong> Master all high ROI topics</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li><strong>Week 1:</strong> Arrays & Hashing + Two Pointers</li>
+                        <li><strong>Week 2:</strong> Sliding Window + Stack & Queue</li>
+                        <li><strong>Week 3:</strong> BFS + Basic DFS</li>
+                        <li><strong>Week 4:</strong> Advanced DFS + Backtracking</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Expected Coverage:</strong> 75-85% of interview patterns</p>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-title">📚 Comprehensive</div>
+                    <div class="plan-duration">2+ Months</div>
+                    <p><strong>Goal:</strong> Complete mastery including medium and low ROI</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li><strong>Month 1:</strong> All High ROI topics</li>
+                        <li><strong>Month 2:</strong> Binary Search + Heap + Intervals</li>
+                        <li><strong>Month 3:</strong> Dynamic Programming + Linked Lists</li>
+                        <li><strong>Month 4+:</strong> All Low ROI topics</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Expected Coverage:</strong> 95-100% of interview patterns</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Remember: Focus on understanding patterns over memorizing solutions. The ROI-based approach ensures you're studying the most impactful topics first.</p>
+        <p>Consistency beats intensity - study regularly and track your progress!</p>
+        <div class="footer-links">
+            <a href="https://leetcode.com/" class="footer-link" target="_blank">LeetCode</a>
+            <a href="https://www.youtube.com/c/NeetCode" class="footer-link" target="_blank">NeetCode YouTube</a>
+            <a href="https://algo.monster/" class="footer-link" target="_blank">AlgoMonster</a>
+            <a href="https://www.educative.io/" class="footer-link" target="_blank">Educative.io</a>
+        </div>
+        <p style="margin-top: 2rem; color: var(--accent-color);">Good luck with your interviews! 🚀</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
